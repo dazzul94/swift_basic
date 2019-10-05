@@ -6,4 +6,5 @@
     - ios - blank로 생성
     - preference
 + Create a new Xcode project - 앱 개발
-# 2. 클린코드 책 보기
+# 2. 추천책 - 클린코드
+# 3. Xcode update -> 11
