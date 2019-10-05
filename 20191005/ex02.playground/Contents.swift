@@ -28,3 +28,25 @@ var myStr2 = "ios 앱" // 문자열 타입으로 추정되어 지정됨.
 // ex) I go to a school today => gotoSchoolToday
 // 주어 목적어 동사: 한국말
 // ex) I today school goto => todaySchoolGoto
+
+// 1. 변수를 선언할 때 (초기값)을 함께 준다.
+var myInt: Int = 10 // 메모리 공간에 저장됨.
+
+// 2. 변수를 선언할 때 (초기값)을 함께 준다.
+var myFloat: Float
+myFloat = 3.14
+
+// 3. 변수를 여러개 설정할 때
+var myInt1, myInt2, myInt3 : Int
+myInt1 = 10
+myInt2 = 20
+myInt3 = 30
+
+// 상수
+// let 상수이름: 타입(자료형)
+let myName: String = "홍길동"
+// myName = "변사또" // 상수는 값이 한번 지정되고 나면 값을 변경할 수 없음.
+// 상수를 사용하는 이유: 고정된 값을 보장하기 위해
+// 원주율: PI =. 3.141592 -> 변경이 안됨.
+// 중력가속도: G = 9.8m/s^2
+
