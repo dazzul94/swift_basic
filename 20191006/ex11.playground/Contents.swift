@@ -155,3 +155,12 @@ let myFloat2: Float? = Float(300)
 var myBool: Bool = true
 let boolObject = NSNumber(value: myBool)
 var myBool2: Bool = boolObject.boolValue
+
+var intNumber: Int = 10
+let intObject = NSNumber(value: intNumber)
+var intNumber2: Int = intObject.intValue
+
+// NSValue - 값 타입, 구조체, 클래스 모두 래핑할 수 있는 클래스
+let rangeValue = NSRange(location: 0, length: 3)
+let rangeObject = NSValue(range: rangeValue)
+let unboxedValue = rangeObject.rangeValue
