@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QqG-t0-74I">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,15 +17,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyBasicCotrol" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rHQ-OW-TEx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="타이틀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdX-as-8Oh">
-                                        <rect key="frame" x="99" y="26" width="252" height="48"/>
+                                        <rect key="frame" x="61" y="26" width="252" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="40"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXv-Ch-5IH">
-                                <rect key="frame" x="157" y="152" width="100" height="100"/>
+                                <rect key="frame" x="137" y="152" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYW-N6-Wv6">
-                                <rect key="frame" x="294" y="152" width="100" height="100"/>
+                                <rect key="frame" x="259" y="152" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -83,15 +83,15 @@
                                     <action selector="onBtnInputClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWZ-q8-SQz"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1.png" translatesAutoresizingMaskIntoConstraints="NO" id="JzZ-ZV-f7J">
-                                <rect key="frame" x="20" y="568" width="180" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF2-5S-zPh">
-                                <rect key="frame" x="40" y="382" width="100" height="100"/>
+                                <rect key="frame" x="137" y="366" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="play-button.png"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1.png" translatesAutoresizingMaskIntoConstraints="NO" id="JzZ-ZV-f7J">
+                                <rect key="frame" x="97" y="474" width="180" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -110,26 +110,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.04347826086958" y="69.642857142857139"/>
+            <point key="canvasLocation" x="112.8" y="68.815592203898049"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Vry-I3-z8L">
             <objects>
                 <viewController id="QqG-t0-74I" customClass="SecondViewController" customModule="MyBasicCotrol" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dDc-kS-6cH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="텍스트필드 데이타" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="11M-a2-RVS">
-                                <rect key="frame" x="45" y="218" width="240" height="128"/>
+                                <rect key="frame" x="73" y="149" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="텍스트필드 데이타" textAlignment="natural" minimumFontSize="17" background="textfieldBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="WLf-9C-COj">
-                                <rect key="frame" x="35" y="76" width="228" height="60"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="텍스트필드 데이타" textAlignment="center" minimumFontSize="17" background="textfieldBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="WLf-9C-COj">
+                                <rect key="frame" x="73" y="71" width="228" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -138,18 +138,56 @@
                                     <outlet property="delegate" destination="QqG-t0-74I" id="pMb-mv-dhl"/>
                                 </connections>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vpz-xp-ZEg">
+                                <rect key="frame" x="164" y="294" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSwitchChanged:" destination="QqG-t0-74I" eventType="valueChanged" id="ycx-5x-ZnZ"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C5O-ow-X1C">
+                                <rect key="frame" x="76" y="376" width="222" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onSegmentChanged:" destination="QqG-t0-74I" eventType="valueChanged" id="eOo-xN-oSI"/>
+                                </connections>
+                            </segmentedControl>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-9x-JRa">
+                                <rect key="frame" x="112" y="455" width="150" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="AUL-mH-83e">
+                                <rect key="frame" x="177" y="489" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="i0u-Mi-1g7">
+                                <rect key="frame" x="102" y="546" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSliderChanged:" destination="QqG-t0-74I" eventType="valueChanged" id="0Rj-iG-6dr"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="BD5-Wp-4Ob"/>
                     </view>
                     <connections>
+                        <outlet property="indicator" destination="AUL-mH-83e" id="yoZ-X1-tuO"/>
+                        <outlet property="progressView" destination="3bt-9x-JRa" id="sfb-7O-4RA"/>
                         <outlet property="textfieldData" destination="WLf-9C-COj" id="vbP-0w-nJN"/>
                         <outlet property="textviewData" destination="11M-a2-RVS" id="dUT-47-sDy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEB-uz-AAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847.82608695652175" y="68.973214285714278"/>
+            <point key="canvasLocation" x="847.20000000000005" y="68.815592203898049"/>
         </scene>
     </scenes>
     <resources>
