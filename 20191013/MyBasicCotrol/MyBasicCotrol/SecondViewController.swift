@@ -61,4 +61,8 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         print("슬라이더 변경됨.", sender.value)    // 0.0 ~ 1.0
         progressView.progress = sender.value    // slider를 바꾸면 progress도 바뀐다.
     }
+    @IBAction func onStepperChanged(_ sender: UIStepper) {
+        print("스텝퍼 변경됨.", sender.value)
+        textviewData.text = String(sender.value)
+    }
 }
