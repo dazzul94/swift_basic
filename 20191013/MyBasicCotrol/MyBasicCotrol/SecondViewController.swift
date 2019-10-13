@@ -25,6 +25,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        print("textFieldshouldreturn 입력됨.")
         return true
         // return false로 하면 이벤트가 무시된다. -> 처리를 하지않는다.
     }
