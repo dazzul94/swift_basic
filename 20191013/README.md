@@ -70,4 +70,7 @@ products > app : 실행파일( 한프로젝트 -> 여러실행파일을 만들 �
 Editor> Embeded in> Navigation Controller
 
 # 새로운 프로젝트 생성
-![스크린샷1](/screenshot/스크린샷 2019-10-13 16.19.07.png)
+![스크린샷1](https://raw.githubusercontent.com/dazzul94/swift_basic/master/20191013/screenshot/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-10-13%2016.19.07.png)
+![스크린샷2](https://raw.githubusercontent.com/dazzul94/swift_basic/master/20191013/screenshot/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-10-13%2016.19.19.png)
+![스크린샷3](https://raw.githubusercontent.com/dazzul94/swift_basic/master/20191013/screenshot/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-10-13%2015.41.08.png)
+![스크린샷4](https://raw.githubusercontent.com/dazzul94/swift_basic/master/20191013/screenshot/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-10-13%2015.41.28.png)
