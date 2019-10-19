@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("1. viewDidLoad")
         // back할때는 다시는 호출 안됨.
+        
+        // AppDelegtate에 접근하는 방법
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.globalData = "전역변수값입니다."
     }
         // 네비게이션 컨트롤러 함수들(뷰 관리)
         

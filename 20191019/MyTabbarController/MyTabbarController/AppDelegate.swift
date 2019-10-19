@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  myViewStruct
+//  MyTabbarController
 //
-//  Created by 503 on 13/10/2019.
+//  Created by 503 on 2019/10/19.
 //  Copyright © 2019 dasol. All rights reserved.
 //
 
@@ -10,8 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    // 전역변수 선언
-    var globalData:String = ""
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -12,11 +12,13 @@ class SecondController: UIViewController {
 
     // 전달받을 데이터 변수 선언
     var data:String = ""
-    
+    var mainVC:ViewController? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         print("전달받은 데이타:", self.data)
-        // Do any additional setup after loading the view.
+        // AppDelegtate에 접근하는 방법
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        print("secondVC에서 출력함",appDelegate.globalData)
     }
     
     @IBAction func onBtnNext(_ sender: UIButton) {
@@ -27,7 +29,8 @@ class SecondController: UIViewController {
     }
     
     @IBAction func onBtnBack(_ sender: UIButton) {
-         self.navigationController?.popViewController(animated: true)
+        self.mainVC?.data = "반갑습니다."
+        self.navigationController?.popViewController(animated: true)
     }
     
 }
