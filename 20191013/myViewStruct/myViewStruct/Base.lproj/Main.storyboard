@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Segue로 이동하기"/>
                                 <connections>
-                                    <segue destination="yEW-vY-obJ" kind="show" id="0S3-LZ-rOA"/>
+                                    <segue destination="yEW-vY-obJ" kind="show" identifier="toSecondVC" id="0S3-LZ-rOA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qK-mM-gFz">
@@ -36,6 +36,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="코드로 이동하기"/>
+                                <connections>
+                                    <action selector="onBtnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijv-Nd-8z7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -47,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="872" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Controller-->
         <scene sceneID="NbX-K5-8sH">
             <objects>
-                <viewController id="yEW-vY-obJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yEW-vY-obJ" customClass="SecondController" customModule="myViewStruct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xbs-Hc-6px">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,12 +79,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="코드로 이동하기"/>
+                                <connections>
+                                    <action selector="onBtnNext:" destination="yEW-vY-obJ" eventType="touchUpInside" id="UmV-05-Weg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqW-7Y-gvU">
                                 <rect key="frame" x="162" y="535" width="104" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="onBtnBack:" destination="yEW-vY-obJ" eventType="touchUpInside" id="qZ0-sl-nqg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -93,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="1651" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Controller-->
         <scene sceneID="Z8C-bp-NZN">
             <objects>
-                <viewController id="bNf-tE-Sad" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bNf-tE-Sad" customClass="ThirdController" customModule="myViewStruct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hcu-qF-nf7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +122,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="onBtnBack:" destination="bNf-tE-Sad" eventType="touchUpInside" id="etZ-Ed-LeG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -127,10 +139,9 @@
         <!--Navigation Controller-->
         <scene sceneID="t6F-Qe-yIW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dmo-g5-sLy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dmo-g5-sLy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vFt-8U-gN6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

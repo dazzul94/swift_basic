@@ -10,21 +10,24 @@ import UIKit
 
 class SecondController: UIViewController {
 
+    // 전달받을 데이터 변수 선언
+    var data:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("전달받은 데이타:", self.data)
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onBtnNext(_ sender: UIButton) {
+        let newVC = self.storyboard?.instantiateViewController(withIdentifier: "ThirdVC") as! ThirdController// self.storyboard 는 Main.storyboard 를 의미한다.
+        // as 는 형변환
+        self.navigationController?.pushViewController(newVC, animated: true)
+        
     }
-    */
-
+    
+    @IBAction func onBtnBack(_ sender: UIButton) {
+         self.navigationController?.popViewController(animated: true)
+    }
+    
 }
