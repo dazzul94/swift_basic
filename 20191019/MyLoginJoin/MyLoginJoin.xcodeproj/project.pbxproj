@@ -15,6 +15,7 @@
 		6BB95CEA235AD3E900435BF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB95CE8235AD3E900435BF5 /* LaunchScreen.storyboard */; };
 		6BB95CF2235ADCCB00435BF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB95CF1235ADCCB00435BF5 /* LoginViewController.swift */; };
 		6BB95CF4235ADCE800435BF5 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB95CF3235ADCE800435BF5 /* JoinViewController.swift */; };
+		6BB95CF6235AEC8900435BF5 /* AgreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB95CF5235AEC8900435BF5 /* AgreeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6BB95CEB235AD3E900435BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BB95CF1235ADCCB00435BF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6BB95CF3235ADCE800435BF5 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		6BB95CF5235AEC8900435BF5 /* AgreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				6BB95CF1235ADCCB00435BF5 /* LoginViewController.swift */,
 				6BB95CF3235ADCE800435BF5 /* JoinViewController.swift */,
 				6BB95CE3235AD3E400435BF5 /* Main.storyboard */,
+				6BB95CF5235AEC8900435BF5 /* AgreeViewController.swift */,
 				6BB95CE6235AD3E900435BF5 /* Assets.xcassets */,
 				6BB95CE8235AD3E900435BF5 /* LaunchScreen.storyboard */,
 				6BB95CEB235AD3E900435BF5 /* Info.plist */,
@@ -149,6 +152,7 @@
 				6BB95CDE235AD3E400435BF5 /* AppDelegate.swift in Sources */,
 				6BB95CF4235ADCE800435BF5 /* JoinViewController.swift in Sources */,
 				6BB95CE0235AD3E400435BF5 /* SceneDelegate.swift in Sources */,
+				6BB95CF6235AEC8900435BF5 /* AgreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

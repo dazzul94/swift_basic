@@ -38,6 +38,9 @@
                                 <state key="normal" title="로그오프">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onBtnLogoff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWt-De-2Iy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="메인화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txh-14-vS6">
                                 <rect key="frame" x="138" y="130" width="139" height="48"/>
@@ -156,6 +159,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="회원가입하기"/>
+                                <connections>
+                                    <action selector="onBtnJoin:" destination="MLh-wb-CqO" eventType="touchUpInside" id="YkS-2R-ntp"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="전화번호를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Q0-zF-XBc">
                                 <rect key="frame" x="107" y="479" width="200" height="50"/>
@@ -163,15 +169,77 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzV-ei-cBf">
+                                <rect key="frame" x="128" y="668" width="157" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="약관보기 팝업뷰"/>
+                                <connections>
+                                    <action selector="onBtnAgree:" destination="MLh-wb-CqO" eventType="touchUpInside" id="hFi-FO-HdA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ugc-cf-I8X"/>
                     </view>
                     <navigationItem key="navigationItem" id="EXE-31-tlg"/>
+                    <connections>
+                        <outlet property="textFieldID" destination="Ixu-uy-iRi" id="j9R-wd-vqD"/>
+                        <outlet property="textFieldName" destination="udI-pj-02U" id="x8b-kG-qYL"/>
+                        <outlet property="textFieldPhone" destination="7Q0-zF-XBc" id="OJl-yJ-apB"/>
+                        <outlet property="textFieldPw" destination="9Un-SC-D5X" id="PI9-1f-Tee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zT2-xl-DTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2171" y="138"/>
+        </scene>
+        <!--Agree View Controller-->
+        <scene sceneID="Jlv-S2-tj6">
+            <objects>
+                <viewController storyboardIdentifier="AgreeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gKP-bO-rOP" customClass="AgreeViewController" customModule="MyLoginJoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hul-1u-VCM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="약관보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VA-xa-3rT">
+                                <rect key="frame" x="138" y="128" width="139" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFR-3a-3pp">
+                                <rect key="frame" x="159" y="279" width="104" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="onBtnBack:" destination="gKP-bO-rOP" eventType="touchUpInside" id="0aJ-9S-xRV"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-C9-Jc7">
+                                <rect key="frame" x="108" y="217" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="약관동의하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYm-L2-rFW">
+                                <rect key="frame" x="171" y="216" width="135" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="g5P-NO-rry"/>
+                    </view>
+                    <connections>
+                        <outlet property="mySwitch" destination="eYx-C9-Jc7" id="2dY-z8-l2t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="624-Tg-IUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2822" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H58-HK-Qn1">
