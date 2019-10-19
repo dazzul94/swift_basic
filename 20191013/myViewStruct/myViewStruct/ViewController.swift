@@ -38,10 +38,10 @@ class ViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         print("7. viewDidDisappear")
     }
-    //  뷰를 로드할 때 커스텀할 때 사용함. (잘안씀)
-    override func loadView() {
-        print("loadView")
-    }
+//    //  뷰를 로드할 때 커스텀할 때 사용함. (잘안씀)
+//    override func loadView() {
+//        print("loadView")
+//    }
 
 }
 
