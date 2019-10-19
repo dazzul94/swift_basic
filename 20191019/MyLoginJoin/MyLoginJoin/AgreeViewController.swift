@@ -11,16 +11,14 @@ import UIKit
 class AgreeViewController: UIViewController {
 
     @IBOutlet weak var mySwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func onBtnBack(_ sender: UIButton) {
-        if mySwitch.isOn {
-            self.dismiss(animated: true, completion: nil)
-        } else {
-            print("약관 동의가 안돼따")
-        }
-
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.isAgree = mySwitch.isOn
+        self.dismiss(animated: true, completion: nil)
     }
 }

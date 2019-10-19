@@ -22,6 +22,10 @@ class JoinViewController: UIViewController {
     }
 
     @IBAction func onBtnJoin(_ sender: UIButton) {
+        if !appDelegate.isAgree {
+            print("약관 동의 해주세요.")
+            return
+        }
         let id = textFieldID.text
         let pw = textFieldPw.text
         let name = textFieldName.text

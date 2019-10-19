@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var userInfo:UserInfo = UserInfo()
     // 로그인여부 (true/false)
     var isLogin:Bool = false
+    var isAgree:Bool = false
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
