@@ -41,6 +41,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     // 드래깅이 끝나기 전에
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         print("scrollViewWillEndDragging")
+        print("속도: ", velocity)
     }
 }
 
