@@ -82,20 +82,22 @@
                                     <constraint firstAttribute="height" constant="128" id="CK1-G3-Rmr"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-zb-jv1">
-                                <rect key="frame" x="87" y="613" width="240" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-zb-jv1">
+                                <rect key="frame" x="103.5" y="670" width="207" height="164"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="8gl-zb-jv1" firstAttribute="width" secondItem="A1M-5Z-pCL" secondAttribute="width" multiplier="0.5" id="0aF-bN-0gz"/>
                             <constraint firstItem="GcD-Wj-Thl" firstAttribute="top" secondItem="A1M-5Z-pCL" secondAttribute="top" constant="20" id="Dvy-3Y-yiw"/>
+                            <constraint firstItem="8gl-zb-jv1" firstAttribute="top" secondItem="Wbn-fP-CKm" secondAttribute="bottom" multiplier="1.1" constant="41" id="F0I-OC-2Vs"/>
                             <constraint firstItem="JcW-Zk-9cC" firstAttribute="top" secondItem="GcD-Wj-Thl" secondAttribute="bottom" constant="30" id="K0m-uS-M7Y"/>
+                            <constraint firstItem="8gl-zb-jv1" firstAttribute="centerX" secondItem="A1M-5Z-pCL" secondAttribute="centerX" id="MdM-mT-g59"/>
                             <constraint firstItem="Wbn-fP-CKm" firstAttribute="top" secondItem="JcW-Zk-9cC" secondAttribute="bottom" constant="30" id="TJf-O4-Ued"/>
                             <constraint firstItem="A1M-5Z-pCL" firstAttribute="trailing" secondItem="JcW-Zk-9cC" secondAttribute="trailing" constant="20" id="UHc-f2-oPt"/>
-                            <constraint firstItem="8gl-zb-jv1" firstAttribute="centerX" secondItem="v44-re-foj" secondAttribute="centerX" id="WNC-og-cAX"/>
-                            <constraint firstItem="8gl-zb-jv1" firstAttribute="top" secondItem="Wbn-fP-CKm" secondAttribute="bottom" constant="30" id="bGE-8Z-AeI"/>
                             <constraint firstItem="Wbn-fP-CKm" firstAttribute="centerX" secondItem="v44-re-foj" secondAttribute="centerX" id="bqB-OK-pLD"/>
+                            <constraint firstItem="8gl-zb-jv1" firstAttribute="height" secondItem="A1M-5Z-pCL" secondAttribute="height" multiplier="0.2" id="lfg-zb-iXI"/>
                             <constraint firstItem="GcD-Wj-Thl" firstAttribute="leading" secondItem="A1M-5Z-pCL" secondAttribute="leading" constant="20" id="oKH-Qh-2gf"/>
                             <constraint firstItem="GcD-Wj-Thl" firstAttribute="top" secondItem="A1M-5Z-pCL" secondAttribute="top" constant="20" id="wze-YL-RM4"/>
                             <constraint firstItem="JcW-Zk-9cC" firstAttribute="leading" secondItem="A1M-5Z-pCL" secondAttribute="leading" constant="20" id="yaX-kc-L9C"/>
