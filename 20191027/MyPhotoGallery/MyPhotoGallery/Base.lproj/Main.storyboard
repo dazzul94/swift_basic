@@ -40,6 +40,24 @@
                                     <action selector="onBtnCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5u-SO-juR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn7-Bv-gEi">
+                                <rect key="frame" x="20" y="438" width="189" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="동영상 불러오기"/>
+                                <connections>
+                                    <action selector="onBtnMovieLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j90-pO-HN4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vn-IH-7Ph">
+                                <rect key="frame" x="46" y="494" width="137" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="동영상 촬영"/>
+                                <connections>
+                                    <action selector="onBtnMovieRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KP8-CS-CNH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -49,6 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="8bC-Xf-vdC" id="l4q-sz-Oc9"/>
                         <outlet property="imageView" destination="3vg-EM-6zE" id="FS6-iL-YM4"/>
                     </connections>
                 </viewController>
