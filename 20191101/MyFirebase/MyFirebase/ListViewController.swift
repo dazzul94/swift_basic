@@ -67,17 +67,46 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     func getValueFromList() {
-        
+        let db = Firestore.firestore()
+        db.collection("idols").getDocuments() {
+            (querySnapshot, err) in
+            if let error = err {
+                print("읽기 에러 발생", error)
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    let dataDic = document.data() as NSDictionary
+                    let name = dataDic["name"] as? String ?? ""
+                    let imageString = dataDic["imageString"] as? String ?? ""
+                    var idol = IdolData()
+                    idol.name = name
+                    idol.imageString = imageString
+                    self.idolArray.append(idol)
+                }
+                // for문이 끝났을 때 리로드
+                self.tableView.reloadData()
+            }
+        }
     }
     
     // MARK: - DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.idolArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath) as! MyTableViewCell
+        cell.labelName.text = self.idolArray[indexPath.row].name
+        cell.myImage.image = UIImage(named: self.idolArray[indexPath.row].imageString)
+        cell.selectionStyle = .none
+        
         return cell
     }
     // MARK: - TableView Delegate
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)번째 선택됨.")
+    }
 }
