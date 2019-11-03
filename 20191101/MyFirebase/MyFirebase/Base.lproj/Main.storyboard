@@ -199,6 +199,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="이미지 업로드하기"/>
+                                <connections>
+                                    <action selector="onBtnUpload:" destination="P0l-iN-ueF" eventType="touchUpInside" id="zEs-U7-kwt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="다운로드 URL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UQ-mz-ysR">
                                 <rect key="frame" x="74" y="570" width="268" height="201"/>
@@ -213,6 +216,10 @@
                         <viewLayoutGuide key="safeArea" id="QvW-T7-qFw"/>
                     </view>
                     <navigationItem key="navigationItem" id="yeC-lD-HhM"/>
+                    <connections>
+                        <outlet property="imageViewIdol" destination="2vO-zn-4GB" id="5N9-5f-s1Z"/>
+                        <outlet property="labelURL" destination="0UQ-mz-ysR" id="yLd-Ir-nDK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bqq-cN-vq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
