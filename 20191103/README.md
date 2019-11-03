@@ -25,3 +25,6 @@ projct identity 에서 DisplayName 을 변경(한글도 가능)
 ### - 사진 못 불러올 때 
 + info.list에서 App Transport Sequrity Settins 
     - Allow Arbitary developemnt  - YES
+
+### - Launch Image 설정
++ LaunchStoryboard 에 추가
