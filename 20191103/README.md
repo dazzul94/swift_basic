@@ -16,8 +16,12 @@
 projct identity 에서 DisplayName 을 변경(한글도 가능)
 
 ### - 리소스 파일 추가
-필요한 리소스를 Asset폴더에 추가
+필요한 리소스를 image 폴더에 추가
 
 ### - 앱 아이콘 변경
 + asset image catalog 로 아이콘 제작
-+ 
++ 만들어진 폴더를 기존에 있던 Aseets.xcassets를 삭제하고 붙여넣기
+
+### - 사진 못 불러올 때 
++ info.list에서 App Transport Sequrity Settins 
+    - Allow Arbitary developemnt  - YES

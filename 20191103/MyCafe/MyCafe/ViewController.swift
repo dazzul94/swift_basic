@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        // 네비게이션바를 숨기기(메인메뉴에서는 안이쁨)
+        self.navigationController?.isNavigationBarHidden = true
+    }
 
 }
 

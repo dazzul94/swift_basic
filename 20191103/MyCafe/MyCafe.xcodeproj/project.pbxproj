@@ -15,6 +15,12 @@
 		6B6F8607236E72B900E4035C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6F8605236E72B900E4035C /* LaunchScreen.storyboard */; };
 		6BC7F44F236E7B8C00DDE8EA /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7F44D236E7B8C00DDE8EA /* logo1.png */; };
 		6BC7F450236E7B8C00DDE8EA /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7F44E236E7B8C00DDE8EA /* logo2.png */; };
+		6BC7F452236E856400DDE8EA /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7F451236E856400DDE8EA /* MyTableViewCell.swift */; };
+		6BC7F454236E85AD00DDE8EA /* Menu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7F453236E85AD00DDE8EA /* Menu1ViewController.swift */; };
+		6BC7F456236E85C200DDE8EA /* Menu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7F455236E85C200DDE8EA /* Menu2ViewController.swift */; };
+		6BC7F458236E85F600DDE8EA /* Menu3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7F457236E85F600DDE8EA /* Menu3ViewController.swift */; };
+		6BC7F45A236E860100DDE8EA /* Menu4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7F459236E860100DDE8EA /* Menu4ViewController.swift */; };
+		6BC7F45C236E861200DDE8EA /* Menu5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7F45B236E861200DDE8EA /* Menu5ViewController.swift */; };
 		A16F512A0627F669AB5951B7 /* Pods_MyCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91717ED930F057B95E1FD505 /* Pods_MyCafe.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +36,12 @@
 		6B6F8608236E72B900E4035C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BC7F44D236E7B8C00DDE8EA /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = "../../../../../../Desktop/아카이브/logo1.png"; sourceTree = "<group>"; };
 		6BC7F44E236E7B8C00DDE8EA /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = "../../../../../../Desktop/아카이브/logo2.png"; sourceTree = "<group>"; };
+		6BC7F451236E856400DDE8EA /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		6BC7F453236E85AD00DDE8EA /* Menu1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1ViewController.swift; sourceTree = "<group>"; };
+		6BC7F455236E85C200DDE8EA /* Menu2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu2ViewController.swift; sourceTree = "<group>"; };
+		6BC7F457236E85F600DDE8EA /* Menu3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu3ViewController.swift; sourceTree = "<group>"; };
+		6BC7F459236E860100DDE8EA /* Menu4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu4ViewController.swift; sourceTree = "<group>"; };
+		6BC7F45B236E861200DDE8EA /* Menu5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu5ViewController.swift; sourceTree = "<group>"; };
 		8C5A81091A3298A1A2DD4858 /* Pods-MyCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCafe.debug.xcconfig"; path = "Target Support Files/Pods-MyCafe/Pods-MyCafe.debug.xcconfig"; sourceTree = "<group>"; };
 		91717ED930F057B95E1FD505 /* Pods_MyCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +89,12 @@
 			children = (
 				6BC7F44A236E74AD00DDE8EA /* image */,
 				6B6F85FA236E72B700E4035C /* AppDelegate.swift */,
+				6BC7F451236E856400DDE8EA /* MyTableViewCell.swift */,
+				6BC7F453236E85AD00DDE8EA /* Menu1ViewController.swift */,
+				6BC7F455236E85C200DDE8EA /* Menu2ViewController.swift */,
+				6BC7F457236E85F600DDE8EA /* Menu3ViewController.swift */,
+				6BC7F459236E860100DDE8EA /* Menu4ViewController.swift */,
+				6BC7F45B236E861200DDE8EA /* Menu5ViewController.swift */,
 				6B6F85FC236E72B700E4035C /* SceneDelegate.swift */,
 				6B6F85FE236E72B700E4035C /* ViewController.swift */,
 				6B6F8600236E72B700E4035C /* Main.storyboard */,
@@ -223,8 +241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B6F85FF236E72B700E4035C /* ViewController.swift in Sources */,
+				6BC7F452236E856400DDE8EA /* MyTableViewCell.swift in Sources */,
+				6BC7F456236E85C200DDE8EA /* Menu2ViewController.swift in Sources */,
+				6BC7F458236E85F600DDE8EA /* Menu3ViewController.swift in Sources */,
+				6BC7F45C236E861200DDE8EA /* Menu5ViewController.swift in Sources */,
+				6BC7F45A236E860100DDE8EA /* Menu4ViewController.swift in Sources */,
 				6B6F85FB236E72B700E4035C /* AppDelegate.swift in Sources */,
 				6B6F85FD236E72B700E4035C /* SceneDelegate.swift in Sources */,
+				6BC7F454236E85AD00DDE8EA /* Menu1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
