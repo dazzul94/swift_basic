@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,14 @@
 		6B6F8602236E72B700E4035C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6F8600236E72B700E4035C /* Main.storyboard */; };
 		6B6F8604236E72B900E4035C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6F8603236E72B900E4035C /* Assets.xcassets */; };
 		6B6F8607236E72B900E4035C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6F8605236E72B900E4035C /* LaunchScreen.storyboard */; };
+		6BC7F44F236E7B8C00DDE8EA /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7F44D236E7B8C00DDE8EA /* logo1.png */; };
+		6BC7F450236E7B8C00DDE8EA /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7F44E236E7B8C00DDE8EA /* logo2.png */; };
+		A16F512A0627F669AB5951B7 /* Pods_MyCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91717ED930F057B95E1FD505 /* Pods_MyCafe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6B6F85F7236E72B700E4035C /* MyCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A0686168BD07C247F57D45 /* Pods-MyCafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCafe.release.xcconfig"; path = "Target Support Files/Pods-MyCafe/Pods-MyCafe.release.xcconfig"; sourceTree = "<group>"; };
+		6B6F85F7236E72B700E4035C /* 빽다방앱.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "빽다방앱.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6F85FA236E72B700E4035C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B6F85FC236E72B700E4035C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6B6F85FE236E72B700E4035C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		6B6F8603236E72B900E4035C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6F8606236E72B900E4035C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B6F8608236E72B900E4035C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC7F44D236E7B8C00DDE8EA /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = "../../../../../../Desktop/아카이브/logo1.png"; sourceTree = "<group>"; };
+		6BC7F44E236E7B8C00DDE8EA /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = "../../../../../../Desktop/아카이브/logo2.png"; sourceTree = "<group>"; };
+		8C5A81091A3298A1A2DD4858 /* Pods-MyCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCafe.debug.xcconfig"; path = "Target Support Files/Pods-MyCafe/Pods-MyCafe.debug.xcconfig"; sourceTree = "<group>"; };
+		91717ED930F057B95E1FD505 /* Pods_MyCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +39,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16F512A0627F669AB5951B7 /* Pods_MyCafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A60E3EADD1808E12BE56638 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91717ED930F057B95E1FD505 /* Pods_MyCafe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B6F85EE236E72B700E4035C = {
 			isa = PBXGroup;
 			children = (
 				6B6F85F9236E72B700E4035C /* MyCafe */,
 				6B6F85F8236E72B700E4035C /* Products */,
+				B9E0DFCAC6C88CF501888015 /* Pods */,
+				0A60E3EADD1808E12BE56638 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6B6F85F8236E72B700E4035C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B6F85F7236E72B700E4035C /* MyCafe.app */,
+				6B6F85F7236E72B700E4035C /* 빽다방앱.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +75,7 @@
 		6B6F85F9236E72B700E4035C /* MyCafe */ = {
 			isa = PBXGroup;
 			children = (
+				6BC7F44A236E74AD00DDE8EA /* image */,
 				6B6F85FA236E72B700E4035C /* AppDelegate.swift */,
 				6B6F85FC236E72B700E4035C /* SceneDelegate.swift */,
 				6B6F85FE236E72B700E4035C /* ViewController.swift */,
@@ -67,6 +87,24 @@
 			path = MyCafe;
 			sourceTree = "<group>";
 		};
+		6BC7F44A236E74AD00DDE8EA /* image */ = {
+			isa = PBXGroup;
+			children = (
+				6BC7F44D236E7B8C00DDE8EA /* logo1.png */,
+				6BC7F44E236E7B8C00DDE8EA /* logo2.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		B9E0DFCAC6C88CF501888015 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A81091A3298A1A2DD4858 /* Pods-MyCafe.debug.xcconfig */,
+				42A0686168BD07C247F57D45 /* Pods-MyCafe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B6F860B236E72B900E4035C /* Build configuration list for PBXNativeTarget "MyCafe" */;
 			buildPhases = (
+				872E1A44F7EEDCBFCCE54BDE /* [CP] Check Pods Manifest.lock */,
 				6B6F85F3236E72B700E4035C /* Sources */,
 				6B6F85F4236E72B700E4035C /* Frameworks */,
 				6B6F85F5236E72B700E4035C /* Resources */,
+				B62C447F4823AF86DE26B8CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +124,7 @@
 			);
 			name = MyCafe;
 			productName = MyCafe;
-			productReference = 6B6F85F7236E72B700E4035C /* MyCafe.app */;
+			productReference = 6B6F85F7236E72B700E4035C /* 빽다방앱.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,13 +165,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC7F450236E7B8C00DDE8EA /* logo2.png in Resources */,
 				6B6F8607236E72B900E4035C /* LaunchScreen.storyboard in Resources */,
 				6B6F8604236E72B900E4035C /* Assets.xcassets in Resources */,
+				6BC7F44F236E7B8C00DDE8EA /* logo1.png in Resources */,
 				6B6F8602236E72B700E4035C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		872E1A44F7EEDCBFCCE54BDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCafe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62C447F4823AF86DE26B8CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCafe/Pods-MyCafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCafe/Pods-MyCafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCafe/Pods-MyCafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B6F85F3236E72B700E4035C /* Sources */ = {
@@ -282,6 +366,7 @@
 		};
 		6B6F860C236E72B900E4035C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C5A81091A3298A1A2DD4858 /* Pods-MyCafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +376,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kds.MyCafe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "빽다방앱";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +384,7 @@
 		};
 		6B6F860D236E72B900E4035C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A0686168BD07C247F57D45 /* Pods-MyCafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +394,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kds.MyCafe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "빽다방앱";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
